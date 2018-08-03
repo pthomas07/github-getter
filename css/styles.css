@@ -1,0 +1,252 @@
+/* =================================
+  Base Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+  margin: 0;
+}
+
+
+
+
+h2 {
+  text-align: center;
+  color: purple;
+}
+
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.5em;
+}
+
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+li {
+  text-align:justify;
+  height: 50px;
+  padding: .5em .5em;
+  margin-bottom: .35em;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightgrey;
+
+  li.style.height = "50px";
+}
+
+span {
+  width: 70%;
+  margin: auto;
+}
+
+button {
+  color: white;
+  background: purple;
+  border: solid 1px;
+  border-color: rgba(0, 0, 0, .1);
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+li button {
+  font-size: .75em;
+  padding: .5em .65em;
+}
+
+/* Pseudo-classes ------------------ */
+
+a:link {
+  color: #47a276;
+  text-decoration: none;
+}
+
+a:visited {
+  color: 	#7647a2;
+}
+
+a:hover {
+  color: #9f7ebd;
+}
+
+a:active {
+  color: purple;
+}
+
+
+/* =================================
+  Main Styles
+==================================== */
+
+
+#repoResultsHeader {
+  display: none; /* Hidden by default */
+}
+
+.name {
+  text-align: center;
+  margin-top: 6px;
+  margin-bottom: 60px;
+  width: 100%;
+  font-size: 3em;
+  background: #fff;
+  color: #6e5494;
+
+}
+
+
+.search-box {
+  background-color: #fff;
+  margin: 0 auto;
+  width: 100%;
+  height: 95px;
+  /* margin-left: 15%; */
+  box-shadow: inset 0px 2px 54px rgba(0,0,0,0.16);
+}
+
+
+
+
+#search {
+  height: 50px;
+  width: 70%;
+  margin: 20px 0px  20px 20px;
+  line-height: 1.7;
+  letter-spacing: normal;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 20;
+  color: #a7b4c2;
+  background-color: #fff;
+  border: solid 1px #dfe5eb;
+}
+
+#search::placeholder {
+  font-family: HelveticaNeueW01-45Ligh;
+  font-size: 20px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.7;
+  letter-spacing: normal;
+  color: #a7b4c2;
+  text-transform: none !important;
+  text-align: left;
+}
+
+.searchButton {
+  color: white;
+  height: 50px;
+  background: purple;
+  border: solid 1px;
+  border-color: rgba(0, 0, 0, .1);
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.repoName,
+.repoOwner,
+.repoLang,
+.repoFollowers,
+.repoUrl,
+.repoDesc {
+  position: relative;
+  padding: 10px;
+  top: auto;
+  left: 50%;
+  font-size: 25px;
+  color: white;
+  margin-left: 50px;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+
+#closeOverlayButton {
+  color: white;
+  height: 50px;
+  background: purple;
+  border: solid 1px;
+  border-color: rgba(0, 0, 0, .1);
+  cursor: pointer;
+}
+
+
+
+
+
+/* ---- Layout Containers ---- */
+
+.container {
+  margin-top: 20px;
+  padding-left: 1em;
+  padding-right: 1em;
+  top: 20;
+  left: 20;
+  display: block;
+  text-align: left;
+  width: 100%;
+  margin: 20px;
+}
+
+
+
+
+#results-container {
+  overflow: auto;
+  max-height: 50vh;
+}
+
+#overlay-container {
+  position: fixed;
+  display: none; /* Hidden by default */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.8);
+  z-index: 2;
+  cursor: pointer;
+  align-items: center;
+}
+
+.main-header {
+  width: 100%;
+  text-align: center;
+}
+
+
+.main-footer {
+  text-align: center;
+  padding: 2em 0;
+  background: #162D3D;
+
+}
+
+
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-height: 769px) {
+
+  .container {
+    width: 80%;
+    max-width: 1150px;
+    margin:0 auto;
+  }
+
+}

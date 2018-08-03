@@ -1,0 +1,36 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Github Getter</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header class="main-header">
+            <h1 class="name">Welcome to Github Getter</h1>
+        </header>
+        <div class="search-box">
+          <input id="search" type="text" placeholder="Find an awesome Github repo..."/><button class="searchButton">Search</button>
+        </div>
+        <div id="results-container">
+          <h2 id="repoResultsHeader">RESULTS</h2>
+          <ul></ul>
+        </div>
+        <div id="overlay-container">
+          <div class="container">
+            <h2 class="repoName"></h2>
+            <h3 class="repoOwner"></h3>
+            <h3 class="repoLang"></h3>
+            <h3 class="repoFollowers"></h3>
+            <h3 class="repoUrl"></h3>
+            <h3 class="repoDesc"></h3>
+            <button id="closeOverlayButton">Close Me</button>
+          </div>
+        </div>
+      <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.4/lodash.min.js"></script>
+      <script src="js/app.js"></script>
+    </body>
+</html>
