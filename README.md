@@ -36,7 +36,7 @@ There are plenty of design improvements that can be made to better enhance the u
 
 
 ### Just for Fun
-Fun ideas to add for developers like us.
+Fun ideas to add.
 
 1. Adding a small browser games near the footer (similar to pacman or snake)
 1. Adding a xkcd feed near the footer

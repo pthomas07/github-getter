@@ -24,14 +24,12 @@ function gitSearch(keyword) {
       return response.json();
     })
     .then(function(repoJson) {
-      // Send
-      resultsTable(repoJson);
+      sendToresultsTable(repoJson);
     });
 }
 
 // Function to display repository results in a list
-
-function resultsTable(repoJson) {
+function sendToresultsTable(repoJson) {
   for (var key in repoJson) {
     let repoArray = repoJson[key];
     // Select the ul element from the dom
@@ -55,7 +53,6 @@ function resultsTable(repoJson) {
 
 // Show Overlay with extra information
 function showOverlay(repoData) {
-
   // Set the overlay text for (name, owner, language, followers, url, and description)
   repoName.textContent =  repoData.name;
   repoOwner.textContent = "Owner: " + repoData.owner;
@@ -67,8 +64,6 @@ function showOverlay(repoData) {
   } else {
     repoDesc.textContent = "Description: [No Description available]"
   }
-
-
   // show overlay
   overlay.style.display = "block";
 }
